@@ -1,0 +1,48 @@
+{
+  "name": "formostock/utils",
+  "description": "Formostock Laravel Utils Package",
+  "keywords": [
+    "Formostock",
+    "laravel",
+    "utils"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://github.com/kingispeak/formostock-utils",
+  "authors": [
+    {
+      "name": "Sin-Fong Lyu",
+      "email": "kingispeak@gmail.com",
+      "homepage": "https://github.com/kingispeak",
+      "role": "Developer"
+    }
+  ],
+  "minimum-stability": "dev",
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
+  "require": {
+    "php": ">=7.1.3"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^6.13"
+  },
+  "autoload": {
+    "psr-4": {
+      "Formostock\\Utils\\": "src/"
+    },
+    "classmap": []
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Formostock\\Utils\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Formostock\\Utils\\ServiceProvider"
+      ]
+    }
+  }
+}
